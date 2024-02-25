@@ -7,5 +7,12 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Một số tricks và tips</title>
+      <link>//localhost:1313/6-align/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/6-align/</guid>
+      <description>Một số cách căn giữa trong CSS Các cách căn giữa trong CSS Căn giữa các phần tử trong CSS có thể được thực hiện bằng nhiều cách khác nhau, tùy thuộc vào loại phần tử và yêu cầu cụ thể của bạn. Dưới đây là một số cách phổ biến để căn giữa các phần tử:&#xA;Căn giữa theo chiều ngang (horizontal centering):&#xA;Căn giữa phần tử block: Đặt thuộc tính margin-left và margin-right thành auto và đảm bảo rằng phần tử có một chiều rộng cụ thể.</description>
+    </item>
   </channel>
 </rss>

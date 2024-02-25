@@ -19,6 +19,6 @@ chapter : false
  3. [Đệm, viền và khoảng lề](4-s3log/)
  4. [Thuộc tính tạo nền](5-Portfwd/)
  5. [Thuộc tính vị trí](6-cleanup/)
- 6. [Một số tricks và tips]()
+ 6. [Một số tricks và tips](6-align/)
 
 

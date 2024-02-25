@@ -12,21 +12,21 @@
     <title>Thuộc tính vị trí :: AWS System Manager</title>
 
     
-    <link href="/css/nucleus.css?1708737244" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1708737244" rel="stylesheet">
-    <link href="/css/hybrid.css?1708737244" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1708737244" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1708737244" rel="stylesheet">
-    <link href="/css/auto-complete.css?1708737244" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1708737244" rel="stylesheet">
-    <link href="/css/theme.css?1708737244" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1708737244" rel="stylesheet">
+    <link href="/css/nucleus.css?1708843611" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1708843611" rel="stylesheet">
+    <link href="/css/hybrid.css?1708843611" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1708843611" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1708843611" rel="stylesheet">
+    <link href="/css/auto-complete.css?1708843611" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1708843611" rel="stylesheet">
+    <link href="/css/theme.css?1708843611" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1708843611" rel="stylesheet">
     
-    <link href="/css/theme-workshop.css?1708737244" rel="stylesheet">
+    <link href="/css/theme-workshop.css?1708843611" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1708737244"></script>
+    <script src="/js/jquery-3.3.1.min.js?1708843611"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1708737244"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1708737244"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1708843611"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1708843611"></script>
 <script type="text/javascript">
     
         var baseurl = "\/\/localhost:1313\/";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1708737244"></script>
+<script type="text/javascript" src="/js/search.js?1708843611"></script>
 
     
   </div>
@@ -193,6 +193,32 @@
         ">
       <a href="/5-position/">
            <b> 5. </b> Thuộc tính vị trí
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/6-align/" title="Một số tricks và tips" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/6-align/">
+           <b> 6. </b> Một số tricks và tips
           
             <i class="fas fa-check read-icon"></i>
           
@@ -447,7 +473,82 @@ left: 10px;
 </ul>
 <p>Phần tử có position: absolute; sẽ không chiếm diện tích trong luồng bình thường của tài liệu, nghĩa là các phần tử khác không được ảnh hưởng bởi nó. Nếu không có phần tử cha có position: relative;, phần tử với position: absolute; sẽ được căn chỉnh dựa trên phần tử gốc của tài liệu (thường là body hoặc phần tử gốc khác).</p>
 </li>
+<li>
+<p>CSS position fixed</p>
+<ul>
+<li>
+<p>Trong CSS, thuộc tính position: fixed được sử dụng để định vị một phần tử cố định (fixed) liên quan đến viewport, không phụ thuộc vào vị trí cuộn trang. Khi một phần tử được đặt thành position: fixed, phần tử đó sẽ được loại bỏ khỏi luồng văn bản thông thường và vị trí của nó sẽ được xác định dựa trên viewport.</p>
+</li>
+<li>
+<p>Dưới đây là một số điểm quan trọng về position: fixed:</p>
+<ul>
+<li>
+<p>Vị trí cố định: Phần tử được định vị liên quan đến viewport. Nó sẽ không di chuyển ngay cả khi trang được cuộn.</p>
+</li>
+<li>
+<p>Bị loại bỏ khỏi luồng văn bản thông thường: Khi một phần tử được đặt thành position: fixed, nó sẽ được loại bỏ khỏi luồng văn bản thông thường. Các phần tử khác sẽ bỏ qua không gian mà nó chiếm.</p>
+</li>
+<li>
+<p>Chồng chất nội dung: Vì các phần tử cố định được định vị liên quan đến viewport, chúng có thể chồng lên các phần tử khác trên trang. Bạn có thể kiểm soát thứ tự chồng chất bằng cách sử dụng thuộc tính z-index.</p>
+</li>
+<li>
+<p>Không cuộn trang: Các phần tử cố định không cuộn cùng với phần còn lại của trang. Chúng được cố định ở vị trí trong viewport.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Để sử dụng position: fixed, bạn cần áp dụng nó cho một phần tử HTML bằng CSS. Dưới đây là một ví dụ:</p>
+<pre tabindex="0"><code>.fixed-element {
+position: fixed;
+top: 20px;
+left: 20px;
+z-index: 100;
+}
+</code></pre><p><em>Trong ví dụ này, lớp .fixed-element được đặt thành vị trí cố định. Nó sẽ được định vị 20 pixel từ phía trên và 20 pixel từ phía trái của viewport. Thuộc tính z-index được đặt thành 100 để kiểm soát thứ tự chồng chất của phần tử.</em></p>
+</li>
+<li>
+<p>Bạn có thể điều chỉnh các thuộc tính top, bottom, left và right để định vị phần tử ở bất kỳ vị trí nào trong viewport.</p>
+</li>
+<li>
+<p>Hãy nhớ rằng các phần tử cố định không bị ảnh hưởng bởi cuộn trang, do đó chúng có thể gây ra vấn đề về bố cục hoặc chồng chất nội dung khác. Quan trọng là kiểm tra và điều chỉnh vị trí của chúng để đảm bảo chúng hoạt động tốt trong bố cục của bạn.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>CSS position sticky</p>
+<ul>
+<li>
+<p>Trong CSS, thuộc tính position: sticky được sử dụng để định vị một phần tử dính (sticky) trong luồng văn bản thông thường, nhưng chuyển sang vị trí cố định (fixed) khi nó tiếp xúc với ranh giới của một phần tử chứa.</p>
+</li>
+<li>
+<p>Dưới đây là một số điểm quan trọng về position: sticky:</p>
+<ul>
+<li>
+<p>Vị trí dính: Phần tử được định vị bình thường trong luồng văn bản, nhưng nó chuyển sang vị trí cố định (fixed) khi nó tiếp xúc với ranh giới của một phần tử chứa (container element).</p>
+</li>
+<li>
+<p>Chuyển đổi linh hoạt: Phần tử sẽ đi theo luồng văn bản thông thường cho đến khi nó tiếp xúc với ranh giới của phần tử chứa. Khi đó, nó sẽ bị &ldquo;dính&rdquo; vào vị trí cố định (fixed) và không di chuyển khi trang được cuộn. Khi phần tử chạm đến ranh giới dưới của phần tử chứa, nó sẽ ngừng &ldquo;dính&rdquo; và tiếp tục di chuyển theo luồng văn bản thông thường.</p>
+</li>
+<li>
+<p>Thành phần chứa: position: sticky chỉ hoạt động khi áp dụng cho một phần tử con của một phần tử chứa (container element). Phần tử chứa phải có một chiều cao được định rõ và thuộc tính overflow được đặt thành giá trị khác visible.</p>
+</li>
+<li>
+<p>Vị trí mặc định: Mặc định, phần tử sẽ được định vị dính ở vị trí ban đầu trong phần tử chứa, nhưng bạn có thể sử dụng các thuộc tính top, bottom, left, right để điều chỉnh vị trí dính.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Ví dụ:</p>
+<pre tabindex="0"><code>.sticky-element {
+position: sticky;
+top: 20px;
+}
+</code></pre><p>Trong ví dụ này, lớp .sticky-element được đặt thành vị trí dính. Nó sẽ được định vị ở vị trí ban đầu, và khi tiếp xúc với ranh giới của phần tử chứa, nó sẽ &ldquo;dính&rdquo; ở vị trí cố định (fixed) và không di chuyển khi trang được cuộn. Thuộc tính top được đặt thành 20px để chỉ định khoảng cách từ phía trên của phần tử chứa.</p>
+</li>
+</ul>
+</li>
 </ol>
+<p><em><strong>Lưu ý rằng position: sticky không được hỗ trợ trên tất cả các trình duyệt và phiên bản. Vì vậy, bạn nên kiểm tra tính tương thích trình duyệt trước khi sử dụng nó.</strong></em></p>
 
 
 
@@ -567,6 +668,25 @@ left: 10px;
             
         
                     
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
             
         
         
@@ -579,7 +699,7 @@ left: 10px;
 			<a class="nav nav-prev" href="/4-bg/" title="Thuộc tính tạo nền"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/1-html/" title="Làm quen với HTML" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/6-align/" title="Một số tricks và tips" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -589,19 +709,19 @@ left: 10px;
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1708737244"></script>
-    <script src="/js/perfect-scrollbar.min.js?1708737244"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1708737244"></script>
-    <script src="/js/jquery.sticky.js?1708737244"></script>
-    <script src="/js/featherlight.min.js?1708737244"></script>
-    <script src="/js/highlight.pack.js?1708737244"></script>
+    <script src="/js/clipboard.min.js?1708843611"></script>
+    <script src="/js/perfect-scrollbar.min.js?1708843611"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1708843611"></script>
+    <script src="/js/jquery.sticky.js?1708843611"></script>
+    <script src="/js/featherlight.min.js?1708843611"></script>
+    <script src="/js/highlight.pack.js?1708843611"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1708737244"></script>
-    <script src="/js/learn.js?1708737244"></script>
-    <script src="/js/hugo-learn.js?1708737244"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1708843611"></script>
+    <script src="/js/learn.js?1708843611"></script>
+    <script src="/js/hugo-learn.js?1708843611"></script>
 
-    <link href="/mermaid/mermaid.css?1708737244" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1708737244"></script>
+    <link href="/mermaid/mermaid.css?1708843611" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1708843611"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

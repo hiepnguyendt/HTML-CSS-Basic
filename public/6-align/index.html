@@ -9,24 +9,24 @@
 
     <link rel="icon" href="/images/favicon.png" type="image/png">
 
-    <title>Đệm, viền và khoảng lề :: AWS System Manager</title>
+    <title>Một số tricks và tips :: AWS System Manager</title>
 
     
-    <link href="/css/nucleus.css?1708840711" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1708840711" rel="stylesheet">
-    <link href="/css/hybrid.css?1708840711" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1708840711" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1708840711" rel="stylesheet">
-    <link href="/css/auto-complete.css?1708840711" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1708840711" rel="stylesheet">
-    <link href="/css/theme.css?1708840711" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1708840711" rel="stylesheet">
+    <link href="/css/nucleus.css?1708843611" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1708843611" rel="stylesheet">
+    <link href="/css/hybrid.css?1708843611" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1708843611" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1708843611" rel="stylesheet">
+    <link href="/css/auto-complete.css?1708843611" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1708843611" rel="stylesheet">
+    <link href="/css/theme.css?1708843611" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1708843611" rel="stylesheet">
     
-    <link href="/css/theme-workshop.css?1708840711" rel="stylesheet">
+    <link href="/css/theme-workshop.css?1708843611" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1708840711"></script>
+    <script src="/js/jquery-3.3.1.min.js?1708843611"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -36,7 +36,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/3-pmb/">
+  <body class="" data-url="/6-align/">
     <nav id="sidebar" class="showVisitedLinks">
 
 
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1708840711"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1708840711"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1708843611"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1708843611"></script>
 <script type="text/javascript">
     
         var baseurl = "\/\/localhost:1313\/";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1708840711"></script>
+<script type="text/javascript" src="/js/search.js?1708843611"></script>
 
     
   </div>
@@ -136,7 +136,7 @@
     
     <li data-nav-id="/3-pmb/" title="Đệm, viền và khoảng lề" class="dd-item 
         
-        active
+        
         
         ">
       <a href="/3-pmb/">
@@ -204,6 +204,32 @@
  
 
           
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/6-align/" title="Một số tricks và tips" class="dd-item 
+        
+        active
+        
+        ">
+      <a href="/6-align/">
+           <b> 6. </b> Một số tricks và tips
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
          
     </ul>
 
@@ -239,7 +265,7 @@
                   
                     
                     
-                      <option id="en" value="//localhost:1313/3-pmb/" selected>English</option>
+                      <option id="en" value="//localhost:1313/6-align/" selected>English</option>
                     
                   
               
@@ -253,7 +279,7 @@
                   
                     
                     
-                      <option id="vi" value="//localhost:1313/vi/3-pmb/">Tiếng Việt</option>
+                      <option id="vi" value="//localhost:1313/vi/6-align/">Tiếng Việt</option>
                     
                   
               
@@ -341,7 +367,7 @@
             
           
           
-            <a href='/'>HTML - CSS cơ bản</a> > Đệm, viền và khoảng lề
+            <a href='/'>HTML - CSS cơ bản</a> > Một số tricks và tips
           
         
           
@@ -352,7 +378,15 @@
                 
                     <div class="progress">
     <div class="wrapper">
-<nav id="TableOfContents"></nav>
+<nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
     </div>
 </div>
 
@@ -368,7 +402,7 @@
           
             <h1>
               
-              Đệm, viền và khoảng lề
+              Một số tricks và tips
             </h1>
           
 
@@ -376,167 +410,145 @@
 
 
 
-	<ol>
+	<h4 id="một-số-cách-căn-giữa-trong-css">Một số cách căn giữa trong CSS</h4>
+<ol>
 <li>
-<p>Thuộc tính padding (đệm)</p>
-<ul>
-<li>Trong CSS, thuộc tính &ldquo;padding&rdquo; được sử dụng để xác định khoảng cách giữa nội dung của một phần tử và ranh giới (border) của nó. Thuộc tính này thường được sử dụng để tạo ra khoảng trắng xung quanh nội dung của một phần tử.
-<ul>
-<li>Cú pháp:
-<pre tabindex="0"><code>padding: giá-trị;
-</code></pre></li>
-</ul>
-</li>
-<li>Giá trị của thuộc tính &ldquo;padding&rdquo; có thể là một giá trị duy nhất hoặc là một danh sách gồm bốn giá trị, tương ứng với các cạnh top, right, bottom và left (theo thứ tự kim đồng hồ). Các giá trị có thể được xác định bằng đơn vị đo <em><strong>(px, em, rem, %)</strong></em> hoặc bằng từ khóa như &ldquo;auto&rdquo;.</li>
-</ul>
-</li>
-<li>
-<p>Thuộc tính border (đường viền)</p>
+<p>Các cách căn giữa trong CSS</p>
 <ul>
 <li>
-<p>Trong CSS, thuộc tính <em><strong>&ldquo;border&rdquo;</strong></em> được sử dụng để xác định đường viền xung quanh một phần tử. Đường viền có thể là một đường thẳng, một đường nét đứt, hoặc một hình dạng khác.</p>
+<p>Căn giữa các phần tử trong CSS có thể được thực hiện bằng nhiều cách khác nhau, tùy thuộc vào loại phần tử và yêu cầu cụ thể của bạn. Dưới đây là một số cách phổ biến để căn giữa các phần tử:</p>
+</li>
+<li>
+<p>Căn giữa theo chiều ngang (horizontal centering):</p>
 <ul>
-<li>Cú pháp:
-<pre tabindex="0"><code>border: [kích thước] [loại] [màu];
-</code></pre></li>
-</ul>
-</li>
 <li>
-<p><strong>[kích thước]</strong>: Xác định kích thước của đường viền. Có thể là một giá trị duy nhất hoặc là một danh sách gồm bốn giá trị <em><strong>(top, right, bottom, left)</strong></em> tương ứng với các cạnh của phần tử. Các giá trị có thể là số nguyên, số thập phân hoặc sử dụng các đơn vị đo như px, em, rem.</p>
-</li>
-<li>
-<p><strong>[loại]</strong>: Xác định loại đường viền. Có thể là &ldquo;solid&rdquo; (đường thẳng), &ldquo;dotted&rdquo; (đường nét đứt), &ldquo;dashed&rdquo; (đường nét gạch), &ldquo;double&rdquo; (đường viền kép), &ldquo;groove&rdquo; (đường viền rãnh), &ldquo;ridge&rdquo; (đường viền núi), &ldquo;inset&rdquo; (đường viền lồi vào), &ldquo;outset&rdquo; (đường viền lồi ra), hoặc &ldquo;none&rdquo; (không có đường viền).</p>
-</li>
-<li>
-<p><strong>[màu]</strong>: Xác định màu sắc của đường viền. Có thể là tên màu (ví dụ: &ldquo;red&rdquo;, &ldquo;blue&rdquo;), mã màu hex (ví dụ: &ldquo;#ff0000&rdquo;), hoặc giá trị màu rgba.</p>
+<p>Căn giữa phần tử block: Đặt thuộc tính margin-left và margin-right thành auto và đảm bảo rằng phần tử có một chiều rộng cụ thể.</p>
 </li>
 <li>
 <p>Ví dụ:</p>
-<ul>
-<li>
-<p>Sử dụng giá trị duy nhất:</p>
-<pre tabindex="0"><code>.box {
-border: 2px solid red;
-}
-</code></pre><p><em>Đường viền có kích thước 2px, loại đường thẳng (solid) và màu đỏ</em>.</p>
-</li>
-<li>
-<p>Sử dụng danh sách giá trị:</p>
-<pre tabindex="0"><code>.box {
-border: 1px solid red;
-border-width: 1px 2px 3px 4px;
-}
-</code></pre><p><em>Đường viền của phần tử có kích thước 1px ở cạnh trên, 2px ở cạnh phải, 3px ở cạnh dưới và 4px ở cạnh trái.</em></p>
-</li>
-</ul>
-</li>
-<li>
-<p>Ngoài ra, cũng có thể sử dụng các thuộc tính con của &ldquo;border&rdquo; như &ldquo;border-top&rdquo;, &ldquo;border-right&rdquo;, &ldquo;border-bottom&rdquo; và &ldquo;border-left&rdquo; để chỉ định giá trị cho từng cạnh một.</p>
-<ul>
-<li>Ví dụ:
-<pre tabindex="0"><code>.box {
-    border-top: 1px solid red;
-    border-right: 2px dashed blue;
-    border-bottom: 3px dotted green;
-    border-left: 4px double orange;
-    }
-</code></pre><em>Phần tử có đường viền ở từng cạnh với các kích thước, loại và màu sắc khác nhau.</em></li>
-</ul>
-</li>
-</ul>
-<p>Trên đây là cách sử dụng thuộc tính &ldquo;border&rdquo; trong CSS để xác định đường viền xung quanh một phần tử.</p>
-</li>
-<li>
-<p>Thuộc tính margin (khoảng cách lề)</p>
-<ul>
-<li>
-<p>Trong CSS, thuộc tính &ldquo;margin&rdquo; được sử dụng để xác định khoảng cách giữa các phần tử và ranh giới của chúng. Thuộc tính này thường được sử dụng để tạo ra khoảng trắng xung quanh các phần tử và điều chỉnh khoảng cách giữa chúng.</p>
-<ul>
-<li>Cú pháp:
-<pre tabindex="0"><code>margin: giá-trị;
-</code></pre></li>
-</ul>
-</li>
-<li>
-<p>Giá trị của thuộc tính &ldquo;margin&rdquo; có thể là một giá trị duy nhất hoặc là một danh sách gồm bốn giá trị, tương ứng với các cạnh top, right, bottom và left (theo thứ tự kim đồng hồ). Các giá trị có thể được xác định bằng đơn vị đo (px, em, rem, %) hoặc bằng từ khóa như &ldquo;auto&rdquo;.</p>
-<ul>
-<li>Ví dụ:
-<ul>
-<li>Sử dụng giá trị duy nhất:
-<pre tabindex="0"><code>.box {
-margin: 20px;
+<pre tabindex="0"><code>.center-element {
+margin-left: auto;
+margin-right: auto;
+width: 200px; /* Đặt chiều rộng mong muốn */
 }
 </code></pre></li>
-<li>Sử dụng danh sách giá trị:
-<pre tabindex="0"><code>.box {
-margin: 10px 20px 15px 5px;
-}
-</code></pre><em>Giá trị &ldquo;10px&rdquo; áp dụng cho cạnh trên (top), &ldquo;20px&rdquo; áp dụng cho cạnh phải (right), &ldquo;15px&rdquo; áp dụng cho cạnh dưới (bottom) và &ldquo;5px&rdquo; áp dụng cho cạnh trái (left).</em></li>
-</ul>
-</li>
-</ul>
-</li>
 <li>
-<p>Ngoài ra, cũng có thể sử dụng các thuộc tính con của &ldquo;margin&rdquo; như &ldquo;margin-top&rdquo;, &ldquo;margin-right&rdquo;, &ldquo;margin-bottom&rdquo; và &ldquo;margin-left&rdquo; để chỉ định giá trị cho từng cạnh một.</p>
-<ul>
-<li>Ví dụ:
-<pre tabindex="0"><code>.box {
-margin-top: 10px;
-margin-right: 20px;
-margin-bottom: 15px;
-margin-left: 5px;
-}
-</code></pre></li>
-</ul>
-</li>
-<li>
-<p>Giá trị của &ldquo;margin&rdquo; cũng có thể là âm để tạo ra sự chồng chéo giữa các phần tử.</p>
-<ul>
-<li>Ví dụ:
-<pre tabindex="0"><code>.box {
-margin: -10px;
-}
-</code></pre><em>Trên đây là cách sử dụng thuộc tính &ldquo;margin&rdquo; trong CSS để xác định khoảng cách giữa các phần tử và ranh giới của chúng.</em></li>
-</ul>
-</li>
-</ul>
-</li>
-<li>
-<p>Thuộc tính box-sizing</p>
-<ul>
-<li>
-<p>Thuộc tính &ldquo;box-sizing&rdquo; trong CSS được sử dụng để xác định cách tính toán kích thước của một phần tử, bao gồm cả kích thước của nội dung, padding và border.</p>
-<ul>
-<li>Cú pháp:
-<pre tabindex="0"><code>box-sizing: giá-trị;
-</code></pre></li>
-</ul>
-</li>
-<li>
-<p>Có hai giá trị phổ biến cho thuộc tính &ldquo;box-sizing&rdquo;:</p>
-<ul>
-<li>
-<p>Giá trị &ldquo;content-box&rdquo; (giá trị mặc định): Kích thước của phần tử chỉ tính toán dựa trên kích thước của nội dung bên trong phần tử, không tính thêm padding và border. Đây là cách tính toán kích thước truyền thống của các phần tử trong CSS.</p>
-</li>
-<li>
-<p>Giá trị &ldquo;border-box&rdquo;: Kích thước của phần tử tính toán bao gồm cả kích thước của nội dung, padding và border. Điều này có nghĩa là kích thước của phần tử sẽ bao gồm cả padding và border, mà không làm thay đổi kích thước tổng cộng của phần tử.</p>
+<p>Căn giữa phần tử inline hoặc inline-block: Sử dụng thuộc tính text-align của phần tử cha để căn giữa các phần tử con theo chiều ngang.</p>
 </li>
 <li>
 <p>Ví dụ:</p>
-<pre tabindex="0"><code>.box {
-box-sizing: border-box;
-width: 200px;
-padding: 20px;
-border: 1px solid black;
+<pre tabindex="0"><code>.center-parent {
+text-align: center;
 }
-</code></pre><p><em>Trong ví dụ trên, thuộc tính &ldquo;box-sizing&rdquo; được đặt thành &ldquo;border-box&rdquo;, điều này có nghĩa là kích thước của phần tử sẽ tính toán bao gồm cả padding và border. Vì vậy, dù đã đặt width là 200px, kích thước tổng cộng của phần tử vẫn là 200px (bao gồm cả nội dung, padding và border), và không bị thay đổi do padding và border.</em></p>
+
+.center-child {
+display: inline-block; /* hoặc inline */
+}
+</code></pre></li>
+</ul>
 </li>
 </ul>
-<p>Trên đây là ý nghĩa và cách sử dụng thuộc tính &ldquo;box-sizing&rdquo; trong CSS.</p>
 </li>
+<li>
+<p>Căn giữa theo chiều dọc (vertical centering):</p>
+<ul>
+<li>Căn giữa phần tử block: Sử dụng kỹ thuật &ldquo;absolute positioning&rdquo; và &ldquo;transform&rdquo; để căn giữa theo chiều dọc.</li>
+<li>Ví dụ:
+<pre tabindex="0"><code>.center-element {
+position: relative;
+top: 50%;
+transform: translateY(-50%);
+}
+</code></pre></li>
+<li>Căn giữa phần tử inline hoặc inline-block: Sử dụng thuộc tính line-height và vertical-align của phần tử cha để căn giữa các phần tử con theo chiều dọc.</li>
+<li>Ví dụ:
+<pre tabindex="0"><code>.center-parent {
+line-height: 200px; /* Đặt chiều cao mong muốn */
+text-align: center;
+}
+
+.center-child {
+display: inline-block; /* hoặc inline */
+vertical-align: middle;
+}
+</code></pre></li>
+</ul>
+</li>
+<li>
+<p>Căn giữa theo cả hai chiều (horizontal và vertical centering):</p>
+<ul>
+<li>
+<p>Sử dụng &ldquo;flexbox&rdquo;: Đặt thuộc tính display của phần tử cha thành flex và sử dụng các thuộc tính justify-content và align-items để căn giữa phần tử con theo cả hai chiều.</p>
+</li>
+<li>
+<p>Ví dụ:</p>
+<pre tabindex="0"><code>.center-parent {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+</code></pre></li>
+<li>
+<p>Sử dụng &ldquo;grid&rdquo;: Đặt thuộc tính display của phần tử cha thành grid và sử dụng các thuộc tính justify-items và align-items để căn giữa phần tử con theo cả hai chiều.</p>
+</li>
+<li>
+<p>Ví dụ:</p>
+<pre tabindex="0"><code>.center-parent {
+display: grid;
+justify-items: center;
+align-items: center;
+}
+</code></pre></li>
+</ul>
+<p><em><strong>Lưu ý rằng một số kỹ thuật căn giữa có thể yêu cầu một số điều kiện đặc biệt, chẳng hạn như phải có kích thước cụ thể cho phần tử hoặc phải có phần tử cha có kích thước xác định. Hãy kiểm tra và đảm bảo các yêu cầu đó được đáp ứng khi áp dụng các kỹ thuật căn giữa.</strong></em></p>
+</li>
+</ol>
+<h4 id="hiển-thị-ảnh-dự-phòng-khi-ảnh-chính-lỗi">Hiển thị ảnh dự phòng khi ảnh chính lỗi</h4>
+<ol>
+<li>
+<p>Để hiển thị ảnh dự phòng (fallback image) khi ảnh chính gặp lỗi, bạn có thể sử dụng thuộc tính onerror của thẻ <!-- raw HTML omitted --> để xử lý sự kiện lỗi và thay thế ảnh bằng ảnh dự phòng.</p>
+<ul>
+<li>
+<p>Dưới đây là một ví dụ về cách thực hiện điều này:</p>
+<pre tabindex="0"><code>&lt;img src=&#34;duong-dan-anh-chinh.jpg&#34; onerror=&#34;this.src=&#39;duong-dan-anh-du-phong.jpg&#39;;&#34;&gt;
+</code></pre></li>
+<li>
+<p><em><strong>Lưu ý, thuộc tính onerror chỉ sử dụng được cho thẻ <!-- raw HTML omitted --></strong></em></p>
+</li>
+</ul>
+</li>
+<li>
+<p>Để hiển thị ảnh dự phòng cho thuộc tính background-image, chúng ta sẽ xử lí như sau:</p>
+<ul>
+<li>Ví dụ:
+<pre tabindex="0"><code>background-image: url(&#39;duong-dan-anh-chinh.jpg&#39;), url(&#39;duong-dan-anh-du-phong.jpg&#39;);
+</code></pre></li>
 </ul>
 </li>
 </ol>
+<h4 id="tối-ưu-performance-hình-ảnh-với-srcset">Tối ưu performance hình ảnh với srcset</h4>
+<ul>
+<li>
+<p>Để tối ưu hiệu suất (performance) của hình ảnh trên trang web, bạn có thể sử dụng thuộc tính srcset cùng với thẻ <!-- raw HTML omitted -->. Thuộc tính này cho phép bạn cung cấp nhiều phiên bản hình ảnh với các kích thước và độ phân giải khác nhau, để trình duyệt có thể tải phiên bản phù hợp nhất với thiết bị và môi trường hiện tại. Điều này giúp giảm thời gian tải và tiết kiệm băng thông mạng.</p>
+</li>
+<li>
+<p>Dưới đây là một ví dụ về cách sử dụng srcset:</p>
+<pre tabindex="0"><code>&lt;img src=&#34;fcj.jpg&#34;
+ srcset=&#34;fcj-1x.jpg 1x,
+         fcj-2x.jpg 2x,
+         fcj-3x.jpg 3x&#34;
+ alt=&#34;FCJ&#34;&gt;
+</code></pre></li>
+<li>
+<p>Trong ví dụ này, chúng ta có một thẻ <!-- raw HTML omitted --> với thuộc tính src đặt thành đường dẫn của ảnh chính. Thuộc tính srcset chứa một danh sách các phiên bản hình ảnh với định dạng: đường-dẫn-hình-ảnh kích-thước. Trong đó, kích-thước có thể là một giá trị số và đơn vị x để chỉ định tỉ lệ độ phân giải so với kích thước ảnh gốc.</p>
+</li>
+<li>
+<p>Khi trình duyệt tải trang, nó sẽ xem xét các phiên bản hình ảnh trong srcset và chọn phiên bản phù hợp nhất dựa trên kích thước và độ phân giải thiết bị. Nếu trình duyệt không hỗ trợ srcset hoặc không tìm thấy phiên bản phù hợp, nó sẽ sử dụng đường dẫn hình ảnh trong thuộc tính src như một lựa chọn dự phòng.</p>
+</li>
+<li>
+<p>Bằng cách cung cấp nhiều phiên bản hình ảnh với srcset, bạn có thể đảm bảo rằng trình duyệt tải phiên bản tốt nhất cho từng thiết bị và môi trường, giúp cải thiện hiệu suất tải trang và trải nghiệm người dùng.</p>
+</li>
+</ul>
 
 
 
@@ -612,6 +624,21 @@ border: 1px solid black;
             
                 
                     
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
                     
                 
                 
@@ -629,9 +656,6 @@ border: 1px solid black;
             
                 
                     
-                        
-                        
-                    
                 
                 
 
@@ -647,6 +671,7 @@ border: 1px solid black;
             
             
                 
+                    
                     
                 
                 
@@ -668,10 +693,10 @@ border: 1px solid black;
 	 
 	 
 		
-			<a class="nav nav-prev" href="/2-css/" title="Làm quen với CSS"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="/5-position/" title="Thuộc tính vị trí"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/4-bg/" title="Thuộc tính tạo nền" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/1-html/" title="Làm quen với HTML" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -681,19 +706,19 @@ border: 1px solid black;
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1708840711"></script>
-    <script src="/js/perfect-scrollbar.min.js?1708840711"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1708840711"></script>
-    <script src="/js/jquery.sticky.js?1708840711"></script>
-    <script src="/js/featherlight.min.js?1708840711"></script>
-    <script src="/js/highlight.pack.js?1708840711"></script>
+    <script src="/js/clipboard.min.js?1708843611"></script>
+    <script src="/js/perfect-scrollbar.min.js?1708843611"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1708843611"></script>
+    <script src="/js/jquery.sticky.js?1708843611"></script>
+    <script src="/js/featherlight.min.js?1708843611"></script>
+    <script src="/js/highlight.pack.js?1708843611"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1708840711"></script>
-    <script src="/js/learn.js?1708840711"></script>
-    <script src="/js/hugo-learn.js?1708840711"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1708843611"></script>
+    <script src="/js/learn.js?1708843611"></script>
+    <script src="/js/hugo-learn.js?1708843611"></script>
 
-    <link href="/mermaid/mermaid.css?1708840711" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1708840711"></script>
+    <link href="/mermaid/mermaid.css?1708843611" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1708843611"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

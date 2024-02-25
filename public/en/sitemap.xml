@@ -74,6 +74,18 @@
                 href="//localhost:1313/5-position/"
                 />
   </url><url>
+    <loc>//localhost:1313/6-align/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="//localhost:1313/vi/6-align/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="//localhost:1313/6-align/"
+                />
+  </url><url>
     <loc>//localhost:1313/categories/</loc>
     <xhtml:link
                 rel="alternate"
